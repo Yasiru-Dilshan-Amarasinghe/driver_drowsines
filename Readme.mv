@@ -1,0 +1,49 @@
+🚗 Driver Drowsiness Detection Project
+
+📁 Step 01: Open Project Folder
+
+Open the main project directory in your preferred IDE (e.g., VS Code, PyCharm).
+
+🧪 Step 02: OpenCV Practice (Haar Cascade Method)
+File: haar_cascade_method.py
+
+This is a practice implementation using OpenCV’s Haar Cascade classifiers.
+
+⚠️ Note:
+        This method is simple and less accurate
+        It is not recommended for the final project
+        Pre-trained Models:
+                          haar_face.xml → Used for face detection
+                          haar_eye.xml → Used for eye detection
+
+These models are directly downloaded from the OpenCV GitHub repository.
+
+▶️ How to Test:
+
+Run the file to check basic OpenCV face and eye detection:
+
+python haar_cascade_method.py
+
+
+🧠 Step 03: Main Project (EAR Method)
+
+File: EAR_method.py
+
+This is the main and recommended implementation of the project.
+
+It uses the Eye Aspect Ratio (EAR) technique to detect drowsiness more accurately.
+
+Pre-trained Model:     
+                  shape_predictor_68_face_landmark.dat
+
+📌 This model is used to:
+                        Detect facial landmarks
+                        Extract eye landmarks
+                        Calculate EAR (Eye Aspect Ratio)
+                        Detect drowsiness based on eye closure
+
+
+🔔 Alarm System
+alarm.wav → Audio file used for alerting when drowsiness is detected
+
+When the system detects prolonged eye closure, it will trigger this alarm sound.

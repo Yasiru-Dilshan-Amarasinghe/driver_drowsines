@@ -15,7 +15,6 @@ def eye_aspect_ratio(eye):
 
 # ----------------------------
 # Alarm
-
 # ----------------------------
 def play_alarm():
     playsound("alarm.wav")
